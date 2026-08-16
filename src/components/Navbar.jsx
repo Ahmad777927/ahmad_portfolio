@@ -5,9 +5,12 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-[var(--line)] bg-[color:var(--bg)]/90 backdrop-blur-md">
       <div className="mx-auto flex h-[60px] max-w-[1040px] items-center justify-between px-8 max-[760px]:px-5">
-        <div className="font-mono text-lg font-semibold tracking-[0.02em]">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="font-mono text-lg font-semibold tracking-[0.02em] cursor-pointer"
+        >
           ahmad<span className="text-[var(--amber)]">.dev</span>
-        </div>
+        </button>
 
         <div className="flex items-center gap-7 font-mono text-[13px] text-[var(--text-dim)] max-[760px]:gap-2">
           {[

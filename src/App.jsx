@@ -12,7 +12,7 @@ import Footer from './components/Footer.jsx'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[var(--bg)] font-sans leading-[1.5] text-[var(--text)] antialiased transition-colors duration-200">
+    <div className="min-h-screen [background:var(--bg-gradient)] font-sans leading-[1.5] text-[var(--text)] antialiased transition-colors duration-200">
       <Navbar />
       <Hero />
       <About />

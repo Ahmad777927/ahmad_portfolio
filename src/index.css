@@ -6,6 +6,7 @@
 [data-theme='dark'] {
   --bg: #111214;
   --bg-raised: #17181b;
+  --bg-gradient: linear-gradient(135deg, #0b0c0e 0%, #16181c 50%, #111214 100%);
   --line: #2a2c30;
   --text: #e9e7e2;
   --text-dim: #9a9994;
@@ -16,6 +17,7 @@
 [data-theme='light'] {
   --bg: #f6f5f2;
   --bg-raised: #ffffff;
+  --bg-gradient: linear-gradient(135deg, #faf9f6 0%, #eae7de 50%, #f6f5f2 100%);
   --line: #e0ddd6;
   --text: #1c1c1c;
   --text-dim: #68655f;
@@ -30,7 +32,8 @@
 
   body {
     margin: 0;
-    background: var(--bg);
+    background: var(--bg-gradient);
+    background-attachment: fixed;
     color: var(--text);
     font-family: Poppins, system-ui, sans-serif !important;
   }
